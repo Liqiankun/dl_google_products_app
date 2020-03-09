@@ -1,3 +1,4 @@
+import 'package:dl_google_products/widgets/product_detail_nav_bar.dart';
 import 'package:flutter/material.dart';
 
 class ProductDetailBackground extends StatelessWidget {
@@ -28,7 +29,7 @@ class ProductDetailBackground extends StatelessWidget {
           top: screenHeight * 0.2,
           child: Image.asset('assets/images/google_text_logo.png',
               color: Color(0xFFECECEC).withOpacity(0.4)),
-        )
+        ),
       ],
     );
   }
