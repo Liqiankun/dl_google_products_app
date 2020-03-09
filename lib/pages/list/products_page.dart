@@ -45,6 +45,7 @@ class ProductsPage extends StatelessWidget {
               product1: pixelStand,
               product2: dayDreamView,
             ),
+            SizedBox(height: 15),
             RedButton(
               buttonText: 'View all',
             ),
