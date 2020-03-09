@@ -1,5 +1,6 @@
 import 'package:dl_google_products/models/product.dart';
 import 'package:dl_google_products/widgets/left_image_product_item.dart';
+import 'package:dl_google_products/widgets/red_button.dart';
 import 'package:dl_google_products/widgets/right_image_product_item.dart';
 import 'package:dl_google_products/widgets/top_bar.dart';
 import 'package:dl_google_products/widgets/two_products_item.dart';
@@ -11,6 +12,7 @@ class ProductsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final double screenHeight = MediaQuery.of(context).size.height;
+    final double safeBottomPadding = MediaQuery.of(context).padding.bottom;
 
     return Scaffold(
       appBar: AppBar(
@@ -43,6 +45,10 @@ class ProductsPage extends StatelessWidget {
               product1: pixelStand,
               product2: dayDreamView,
             ),
+            RedButton(
+              buttonText: 'View all',
+            ),
+            SizedBox(height: safeBottomPadding)
           ],
         ),
       ),
