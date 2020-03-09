@@ -1,6 +1,7 @@
 import 'package:dl_google_products/models/product.dart';
 import 'package:dl_google_products/pages/detail/product_detail_page.dart';
 import 'package:dl_google_products/widgets/blue_button.dart';
+import 'package:dl_google_products/widgets/fade_page_route.dart';
 import 'package:flutter/material.dart';
 
 class RightImageProductItem extends StatelessWidget {
@@ -16,8 +17,8 @@ class RightImageProductItem extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(
-            builder: (context) => ProductDetailPage(product: product),
+          FadePageRoute(
+            widget: ProductDetailPage(product: product),
           ),
         );
       },
