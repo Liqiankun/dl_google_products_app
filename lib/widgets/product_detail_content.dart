@@ -21,9 +21,12 @@ class ProductDetailContent extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           SizedBox(height: screenHeight * 0.2),
-          Image.asset(
-            product.imagePath,
-            height: screenHeight * 0.3,
+          Hero(
+            tag: product.name,
+            child: Image.asset(
+              product.imagePath,
+              height: screenHeight * 0.3,
+            ),
           ),
           Row(
             mainAxisSize: MainAxisSize.max,

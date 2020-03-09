@@ -10,7 +10,12 @@ class ProductDetailNavBar extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 16),
       child: Row(
         children: <Widget>[
-          Icon(Icons.arrow_back),
+          GestureDetector(
+            onTap: () {
+              Navigator.pop(context);
+            },
+            child: Icon(Icons.arrow_back),
+          ),
           Spacer(),
           Icon(
             Icons.search,

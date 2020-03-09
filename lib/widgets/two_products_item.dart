@@ -1,5 +1,7 @@
 import 'package:dl_google_products/models/product.dart';
+import 'package:dl_google_products/pages/detail/product_detail_page.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class TwoProductsItem extends StatelessWidget {
   final Product product1, product2;
@@ -17,16 +19,36 @@ class TwoProductsItem extends StatelessWidget {
         children: <Widget>[
           Expanded(
             flex: 1,
-            child: VerticalProductItem(
-              screenHeight: screenHeight,
-              product: product1,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ProductDetailPage(product: product1),
+                  ),
+                );
+              },
+              child: VerticalProductItem(
+                screenHeight: screenHeight,
+                product: product1,
+              ),
             ),
           ),
           Expanded(
             flex: 1,
-            child: VerticalProductItem(
-              screenHeight: screenHeight,
-              product: product2,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ProductDetailPage(product: product2),
+                  ),
+                );
+              },
+              child: VerticalProductItem(
+                screenHeight: screenHeight,
+                product: product2,
+              ),
             ),
           )
         ],
@@ -49,9 +71,12 @@ class VerticalProductItem extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Image.asset(
-            product.imagePath,
-            height: screenHeight * 0.15,
+          Hero(
+            tag: product.name,
+            child: Image.asset(
+              product.imagePath,
+              height: screenHeight * 0.15,
+            ),
           ),
           SizedBox(height: 8),
           Text(

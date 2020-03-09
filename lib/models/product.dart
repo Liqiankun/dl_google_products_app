@@ -21,6 +21,9 @@ final Product pixelStand = Product(
   description: "New Release",
   buttonText: "",
   backgroundColor: Color(0xFFF9F9F9),
+  price: "80",
+  productInfo: "Stadia is Google's new cloud based "
+      "gaming platform that allows you to play your favorite git video games across screens instantly.",
 );
 
 final Product dayDreamView = Product(
@@ -29,6 +32,9 @@ final Product dayDreamView = Product(
   description: "Premium",
   buttonText: "",
   backgroundColor: Color(0xFFE0DDFF),
+  price: "80",
+  productInfo: "Stadia is Google's new cloud based "
+      "gaming platform that allows you to play your favorite git video games across screens instantly.",
 );
 
 final Product pixel = Product(
@@ -37,6 +43,9 @@ final Product pixel = Product(
   description: "Meet the Google Pixel 3a.",
   buttonText: "Learn more",
   backgroundColor: Color(0xFFF5F5F5),
+  price: "80",
+  productInfo: "Stadia is Google's new cloud based "
+      "gaming platform that allows you to play your favorite git video games across screens instantly.",
 );
 
 final Product stadia = Product(
