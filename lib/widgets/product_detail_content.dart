@@ -83,10 +83,7 @@ class ProductDetailContent extends StatelessWidget {
           ),
           SizedBox(height: 10),
           Text(
-            product.productInfo +
-                product.productInfo +
-                product.productInfo +
-                product.productInfo,
+            product.productInfo + product.productInfo,
             style: TextStyle(
               fontWeight: FontWeight.w300,
               fontSize: 14.0,
