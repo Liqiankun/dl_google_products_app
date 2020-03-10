@@ -1,6 +1,4 @@
-# dl_google_products
-
-A new Flutter project.
+![google_products_app](https://github.com/Liqiankun/dl_google_products_app/blob/master/google_products_app.png)
 
 ## Getting Started
 
